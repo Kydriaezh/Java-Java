@@ -6,6 +6,7 @@ package Homework1;
 //* * Также заполнить элементы побочной диагонали
 
 import java.util.Random;
+
 public class task4 {
     public static void main(String[] args) {
        
