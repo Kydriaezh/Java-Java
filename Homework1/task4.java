@@ -8,7 +8,8 @@ package Homework1;
 import java.util.Random;
 
 public class task4 {
-    public static void main(String[] args) {
+   
+     {
        
         int[][] array = new int [4][4];
         Random random = new Random();
