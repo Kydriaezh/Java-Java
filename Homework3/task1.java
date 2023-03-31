@@ -9,8 +9,10 @@ public class task1 {
         arr.add(1);
         arr.add(2);
         arr.add(3);
-        arr.add(657);
-        arr.add(234);
+        arr.add(4);
+        arr.add(5);
+        arr.add(6);
+        arr.add(7);
         arr.add(8);
         arr.add(9);
         System.out.println(arr);
