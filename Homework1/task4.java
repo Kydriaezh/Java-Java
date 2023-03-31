@@ -5,27 +5,29 @@ package Homework1;
 //* Определить элементы одной из диагоналей можно по следующему принципу: индексы таких элементов равны, то есть [0][0], [1][1], [2][2], …, [n][n];
 //* * Также заполнить элементы побочной диагонали
 
-import java.util.Random;
+import java.util.Arrays;
 
 public class task4 {
-   
-     {
-       
-        int[][] array = new int [4][4];
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            for (int j=0; i < array.length; i++) {
-                array[i][j] = random.nextInt(10);
-            }
-        }     
+    public static void main(String[] args){
+        int[][] arr3 = quad(20);
+        for (int[] is : arr3) {
+            System.out.println(Arrays.toString(is));
+        }
+    }
             
-            for (int i = 0; i < array.length; i++) {
-            for (int j=0; i < array.length; i++) {       
-                System.out.println(array[i][j] + " ");
+        private static int[][] quad(int size) {
+            int[][] arr = new int[size][size];
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0, z = arr[i].length - 1; j < arr[i].length; j++, z--) {
+                    if (i == j || i == z)
+                        arr[i][j] = 1;
+                    else
+                        arr[i][j] = 0;
+                }
             }
+            return arr;
+        }
             System.out.println();
     }
    
     
-}
-    }
