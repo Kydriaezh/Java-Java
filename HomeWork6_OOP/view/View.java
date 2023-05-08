@@ -1,4 +1,4 @@
-package view;
+package HomeWork6_OOP.view;
 
 import java.util.Map;
 
